@@ -1,17 +1,24 @@
 #include "functions.h"
 #include <iostream>
+#include <stdlib.h>
+
+using std::cout;
+using std::endl;
 
 int main() {
-    std::cout << "--------swap() begin--------" << std::endl;
+    cout << "--------swap() begin--------" << endl;
     int a = 10, b = 20;
-    std::cout << "a = " << a << ", b = " << b << std::endl;
+    cout << "a = " << a << ", b = " << b << endl;
 
     swap(a, b);
-    std::cout << "a = " << a << ", b = " << b << std::endl;
-    std::cout << "--------swap() end--------" << std::endl << std::endl;
+    cout << "a = " << a << ", b = " << b << endl;
+    cout << "--------swap() end--------" << endl << endl;
 
-    std::cout << "--------sum() begin--------" << std::endl;
-    std::cout << "sum(1, 2, 3) = " << sum(3, 1, 2, 3) << std::endl;
-    std::cout << "sum(1, 2, 3, 4) = " << sum(4, 1, 2, 3, 4) << std::endl;
-    std::cout << "--------sum() end--------" << std::endl << std::endl;
+    cout << "--------sum() begin--------" << endl;
+    cout << "sum(1, 2, 3) = " << sum(3, 1, 2, 3) << endl;
+    cout << "sum(1, 2, 3, 4) = " << sum(4, 1, 2, 3, 4) << endl;
+    cout << "--------sum() end--------" << endl << endl;
+
+    srand((unsigned int)time(0));
+    cout << "random number: " << rand() << endl;
 }
